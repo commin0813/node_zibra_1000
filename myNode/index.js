@@ -9,13 +9,11 @@ var con = mongoose.connection;
 //var con =mongoose.connect('mongodb://localhost:27017/test_1');
 
 con.once('open',function callback(){
-	console.log('open');
+	console.log('db open on 27017');
 });
 
 app.get('/',function(req,res){
     res.sendFile(__dirname+'/index.html');
-    
-    
 });
 
 io.on('connection',function(socket){
