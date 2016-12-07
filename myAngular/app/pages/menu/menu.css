@@ -1,0 +1,15 @@
+.menu_item{
+    width:49%;
+    border: none;
+    background-color: #ff0000;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    
+}
+.menu_item a{
+    color: #fafafa;
+    font-size: 1.5em;
+    font-size: bold;
+    text-decoration: none;
+}
