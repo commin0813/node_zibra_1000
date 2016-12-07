@@ -1,0 +1,7 @@
+branch 
+
+myangular_branch 
+{
+create :  2016 . 12 . 7 
+description :  "this branch is angular example branch" 
+}
