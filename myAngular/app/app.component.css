@@ -1,0 +1,9 @@
+.title_border{
+    padding: 10px;
+    text-align: center;
+}
+.title_border h1{
+    color: #fafafa;
+    font-style: bold;
+    font-size: 2em;
+}
