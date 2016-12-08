@@ -1,0 +1,18 @@
+<div class="layout_left">
+    <div class="layer" *ngFor="let area of areas">
+        <div class="row">
+            <div class="col-title">
+                <p>{{area.area}}</p>
+            </div>
+            <div class="col-content" *ngFor="let data of physicaldatas">
+                <div class="box">
+                </div>
+                {{data.name}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="layout_right">
+
+</div>

@@ -1,11 +1,37 @@
-<div class="hello_header">
-<div class="title_border">
-    <h1>{{title}}</h1>
+<div class="layout">
+    <div class="layer_title">
+        <div class="title_content">
+            <div class="logo">{{logo}}</div>
+            <div class="title">{{title}}</div>
+        </div>
+
+    </div>
+    <div class="layer_body">
+        <div class="body_content_menu">
+            <ul class="menu">
+                <li *ngFor="let menu of menus" [class.selected]=" menu === selectMenu" (click)="onSelect(menu)">
+                    <a *ngIf="menu.id == 1" routerLink="/total_map">{{menu.name}}</a>
+                    <a *ngIf="menu.id == 2" routerLink="/physical_view">{{menu.name}}</a>
+                    <a *ngIf="menu.id == 3" routerLink="/logical_view">{{menu.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="body_content_view">
+            <div class="view">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+
+    </div>
 </div>
-</div>
-<div class="hello_menu">
-<page-menu></page-menu>
-</div>
-<div class="hello_body">
-<page-board></page-board>
-</div>
+
+
+
+
+
+
+<!--<nav class="box_item_nav_menu">
+            <a [class.selected]="'Total Map' === selected_menu" routerLink="/total_map" (click)="onSelect('Total Map')">Total Map</a>
+            <a [class.selected]="'Physical View' === selected_menu" routerLink="/physical_view" (click)="onSelect('Physical View')">Physical View</a>
+            <a [class.selected]="'Logical View' === selected_menu" routerLink="/logical_view" (click)="onSelect('Logical View')">Logical View</a>
+        </nav>-->

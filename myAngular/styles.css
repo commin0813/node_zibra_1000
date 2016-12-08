@@ -1,3 +1,18 @@
+/*.hello_box{
+  width: 1300px;
+  padding: 0 !important;
+  margin: 0 auto;
+}
+.hello_box .box_title{
+  background-color: #618CC9;
+  height: 100px;
+}
+.hello_box .box_body{
+  background-color: #efefef;
+  height: 800px;
+  padding-top: 30px;
+}
+
 .hello_header{
   border: 1px solid #cdcdcd;
     padding: 10px;
@@ -9,7 +24,9 @@
 }
 .hello_body{
   background-color: #fafafa;
+}*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
