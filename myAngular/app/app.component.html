@@ -1,5 +1,61 @@
-<div class="hello_header">
-<div class="title_border">
-    <h1>{{title}}</h1>
-</div>
+<div class="layout">
+    <div class="title_layout">
+
+        <div class="logo_layer">
+            <div class="logo">
+                {{logo}}
+            </div>
+        </div>
+        <div class="search_layer">
+            <div class="search">
+                <input type="input" />
+            </div>
+        </div>
+
+    </div>
+    <div class="view_layout">
+        <div class="tree">
+           <ul>
+               <li [class.selected]="selectMenu === 'mydrive'"
+               [class.noselected]="selectMenu != 'mydrive'"
+                (click)="Onselected('mydrive')">
+                   <p>내 드라이브</p>
+               </li>
+               <li  [class.selected]="selectMenu === 'publicdoc'" 
+               [class.noselected]="selectMenu != 'publicdoc'"
+               (click)="Onselected('publicdoc')">
+                   <p>공유 문서함</p>
+               </li>
+               <li  [class.selected]="selectMenu === 'doc'" 
+               [class.noselected]="selectMenu != 'doc'"
+               (click)="Onselected('doc')">
+                   <p>최근 문서함</p>
+               </li>
+               <li  [class.selected]="selectMenu === 'photo'" 
+               [class.noselected]="selectMenu != 'photo'"
+               (click)="Onselected('photo')">
+                   <p>Google 포토</p>
+               </li>
+               <li  [class.selected]="selectMenu === 'important'" 
+               [class.noselected]="selectMenu != 'important'"
+               (click)="Onselected('important')">
+                   <p>중요</p>
+               </li>
+               <li  [class.selected]="selectMenu === 'delete'" 
+               [class.noselected]="selectMenu != 'delete'"
+               (click)="Onselected('delete')">
+                   <p>휴지통</p>
+                   
+               </li>
+           </ul>
+            
+        </div>
+
+        <div class="view_layer">
+           <div> asdf</div>
+        </div>
+
+    </div>
+
+
 </div>
