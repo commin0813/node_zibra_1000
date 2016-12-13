@@ -1,15 +1,4 @@
-.hello_header{
-  border: 1px solid #cdcdcd;
-    padding: 10px;
-    text-align: center;
-    background-color: #f29d34;
+body{
+  padding : 0;
+  margin: 0;
 }
-.hello_menu{
-  background-color: #fafafa;
-}
-.hello_body{
-  background-color: #fafafa;
-}
-
-
-

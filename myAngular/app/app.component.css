@@ -1,9 +1,128 @@
-.title_border{
-    padding: 10px;
-    text-align: center;
+.layout{
+
 }
-.title_border h1{
+.layout .layer_top{
+    background-color:#396799;
+    width:1280px;
+    height:75px;
+    position: relative;
+    margin: 0 auto;
+}
+.layout .layer_top .logo{
     color: #fafafa;
-    font-style: bold;
-    font-size: 2em;
+    font-size: 2.5em;
+    position: absolute;
+    left: 125px;
+    top: 7px;
 }
+
+.layout .layer_top .title{
+    color: #cdcdcd;
+    font-size: 1.5em;
+    position: absolute;
+    left: 275px;
+    top: 25px;
+}
+.layout .layer_top .setting{
+    color:#fafafa;
+    border-radius:360px;
+  
+    width: 40px;
+    height: 40px;
+    background-color: #8C99DE;
+    display: inline-block;
+    position: absolute;
+    right: 200px;
+    top: 20px;
+}
+.layout .layer_top .setting #setting{
+    margin-top: 13px;
+    margin-left: 8px;
+    font-size: 0.5em;
+}
+
+.layout .layer_top .exit{
+    color:#fafafa;
+    border-radius:360px;
+    width: 40px;
+    height: 40px;
+    background-color: #8C99DE;
+    display: inline-block;
+    position: absolute;
+    right: 140px;
+    top: 20px;
+}
+.layout .layer_top .exit #exit{
+    margin-top: 13px;
+    margin-left: 5px;
+    font-size: 0.5em;
+}
+
+
+/*     body        */
+
+.layout .layer_body{
+    background-color:#D7EBFF;
+    width:1280px;
+    height:695px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.layout .layer_body .view_box{
+    width:1028px;
+    height:440px;
+    position: absolute;
+    top: 20px;
+    left: 125px;
+}
+.layout .layer_body .view_box .view_menu{
+    height: 43px;
+    width: 390px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    /*border-left: 1px solid #396799;
+    border-right: 1px solid #396799;
+    border-top: 1px solid #396799;
+    border-radius: 5px 5px 0 0;*/
+}
+.layout .layer_body .view_box .view_menu .col-menu{
+    float: left;
+    width: 32.5%;
+    height: 100%;
+    background-color: #396799;
+    margin: 0!important;
+    border-left: 1px solid #396799;
+    border-right: 1px solid #396799;
+    border-top: 1px solid #396799;
+    border-radius: 5px 5px 0 0;
+   
+}
+.layout .layer_body .view_box .view_menu .col-menu:hover{
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+.col-menu #logical-view ,#total-map,#physical-view{
+    color: #fafafa;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+
+.layout .layer_body .view_box .view_body{
+    height: 397px;
+    width: 1028px;
+
+    position: absolute;
+    top: 43px;
+    border: 1px solid #396799;
+   border-radius: 5px 5px;
+
+}
+
+
