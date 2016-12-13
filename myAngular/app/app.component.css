@@ -1,6 +1,8 @@
 .layout{
 
 }
+
+/*     top        */
 .layout .layer_top{
     background-color:#396799;
     width:1280px;
@@ -15,6 +17,9 @@
     left: 125px;
     top: 7px;
 }
+.layout .layer_top .logo:hover{
+    cursor: pointer;
+}
 
 .layout .layer_top .title{
     color: #cdcdcd;
@@ -22,6 +27,9 @@
     position: absolute;
     left: 275px;
     top: 25px;
+}
+.layout .layer_top .setting:hover{
+    cursor: pointer;
 }
 .layout .layer_top .setting{
     color:#fafafa;
@@ -62,12 +70,34 @@
 /*     body        */
 
 .layout .layer_body{
-    background-color:#D7EBFF;
+    background-color:#eee;
     width:1280px;
     height:695px;
     margin: 0 auto;
     position: relative;
     
+}
+
+.layout .layer_body .button_box{
+    width:220px;
+    height: 22px;
+    position: absolute;
+  
+    right: 125px;
+    top:20px;
+}
+.layout .layer_body .button_box button{
+    width:53px;
+    float: left;
+    border: 1px solid #cdcdcd;
+    border-radius: 90px;
+    text-align: center;
+    background-color: #fafafa;
+    margin-left: 2px;
+    padding: 5px;
+}
+.layout .layer_body .button_box button:active{
+    background-color: #000;
 }
 
 .layout .layer_body .view_box{
@@ -77,18 +107,32 @@
     top: 20px;
     left: 125px;
 }
+
+
+
+
+
 .layout .layer_body .view_box .view_menu{
     height: 43px;
     width: 390px;
     position: absolute;
     left: 20px;
     top: 1px;
-    /*border-left: 1px solid #396799;
+}
+.layout .layer_body .view_box .view_menu .selected{
+    float: left;
+    width: 32.5%;
+    height: 100%;
+    background-color: #fafafa;
+    margin: 0!important;
+    border-left: 1px solid #396799;
     border-right: 1px solid #396799;
     border-top: 1px solid #396799;
-    border-radius: 5px 5px 0 0;*/
+    border-radius: 5px 5px 0 0;
 }
-.layout .layer_body .view_box .view_menu .col-menu{
+
+
+.layout .layer_body .view_box .view_menu .noselected{
     float: left;
     width: 32.5%;
     height: 100%;
@@ -100,12 +144,15 @@
     border-radius: 5px 5px 0 0;
    
 }
-.layout .layer_body .view_box .view_menu .col-menu:hover{
+.layout .layer_body .view_box .view_menu .noselected:hover{
     cursor: pointer;
-    background-color: #fafafa;
 }
 
-.col-menu #logical-view ,#total-map,#physical-view{
+.layout .layer_body .view_box .view_menu .selected:hover{
+    cursor:default;
+}
+
+.noselected #logical-view ,.noselected #total-map,.noselected #physical-view{
     color: #fafafa;
     font-size: 1.2em;
     display: inline-block;
@@ -113,6 +160,13 @@
     margin-left: 7px;
 }
 
+.selected #logical-view ,.selected #total-map,.selected #physical-view{
+    color: #396799;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
 
 .layout .layer_body .view_box .view_body{
     height: 397px;
@@ -123,6 +177,73 @@
     border: 1px solid #396799;
    border-radius: 5px 5px;
 
+}
+
+/* table */
+table{
+    border-collapse:collapse;
+}
+td{
+    text-align: center; 
+     padding :5px;
+}
+td #WARINNG{
+    background-color: #E3BC59;
+    color: #fafafa;
+}
+td #CRITICAL{
+    background-color: #E47659;
+    color: #fafafa;
+}
+
+
+.layout .layer_body .table_box{
+    width:1028px;
+    height: 210px;
+    position: absolute;
+    top: 470px;
+    left: 125px;
+}
+.layout .layer_body .table_box .table_top{
+    width:1028px;
+    height:25px;
+    border:1px solid #6AB7DE;
+    border-radius: 3px;
+    background-color: #CFEBFF;
+}
+.layout .layer_body .table_box .table_top th{
+    font-size: 0.8em;
+}
+.layout .layer_body .table_box .table_middle{
+    width:1028px;
+    height:155px;
+    border:1px solid #6AB7DE;
+    border-radius: 3px;
+    background-color: #fafafa;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+.layout .layer_body .table_box .table_middle tr{
+    background-color: #fafafa;
+}
+.layout .layer_body .table_box .table_middle tr#alt td{
+    background-color: #CFEBFF;
+    
+}
+.layout .layer_body .table_box .table_bottom{
+    width:1028px;
+    height:25px;
+    border:1px solid #6AB7DE;
+    border-radius: 3px;
+    background-color: #cdcdcd;
+
+}
+.layout .layer_body .table_box .table_bottom .event{
+    text-align: center;
+}
+.layout .layer_body .table_box .table_bottom .event:hover{
+    cursor: pointer;
 }
 
 

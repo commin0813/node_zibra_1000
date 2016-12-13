@@ -1,0 +1,25 @@
+.layout{
+    margin:0;
+    padding:0;
+}
+
+.layout .left_layer{
+    width:718px;
+    height:396px;
+    background-color: #fafafa;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    float: left;
+    border-right: 0.5px solid #396799;
+}
+
+
+.layout .right_layer{
+    width:309px;
+    height:396px;
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+    left: 719px;
+    background-color: #fafafa;
+    
+}
