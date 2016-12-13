@@ -1,6 +1,6 @@
 <div class="layout">
     <div class="layer_top">
-        <div class="logo">NetApp</div>
+        <div class="logo" routerLink="">NetApp</div>
         <div class="title">NetApp Insight Manager</div>
         <div class="setting">
             <div id="setting">설정</div>
@@ -11,10 +11,10 @@
     </div>
     <div class="layer_body">
         <div class="button_box">
-           <button id="btn_critical">> 1</button>
-           <button id="btn_error">> 2</button>
-           <button id="btn_warinng">> 3</button>
-           <button id="btn_linkfail">> 4</button> 
+            <button id="btn_critical">> 1</button>
+            <button id="btn_error">> 2</button>
+            <button id="btn_warinng">> 3</button>
+            <button id="btn_linkfail">> 4</button>
 
         </div>
         <div class="view_box">
@@ -24,22 +24,16 @@
 
             </div>
             <div class="view_menu">
-                <div [class.selected]="selected_menu === 'Total Map'"
-               [class.noselected]="selected_menu != 'Total Map'"
-                routerLink="/totalmap"
-                (click)="onSelected('Total Map')">
+                <div [class.selected]="selected_menu === 'Total Map'" [class.noselected]="selected_menu != 'Total Map'" routerLink="/totalmap"
+                    (click)="onSelected('Total Map')">
                     <div id="total-map">Total Map</div>
                 </div>
-                <div [class.selected]="selected_menu === 'Physical View'"
-               [class.noselected]="selected_menu != 'Physical View'"
-                routerLink="/physicalview"
-                (click)="onSelected('Physical View')">
+                <div [class.selected]="selected_menu === 'Physical View'" [class.noselected]="selected_menu != 'Physical View'" routerLink="/physicalview"
+                    (click)="onSelected('Physical View')">
                     <div id="physical-view">Physical View</div>
                 </div>
-                <div [class.selected]="selected_menu === 'Logical View'"
-               [class.noselected]="selected_menu != 'Logical View'"
-                routerLink="/logicalview"
-                (click)="onSelected('Logical View')">
+                <div [class.selected]="selected_menu === 'Logical View'" [class.noselected]="selected_menu != 'Logical View'" routerLink="/logicalview"
+                    (click)="onSelected('Logical View')">
                     <div id="logical-view">Logical View</div>
                 </div>
             </div>
@@ -62,10 +56,13 @@
                 </table>
             </div>
             <div class="table_middle">
+
                 <table>
                     <tr>
                         <td width="175">2016.10.30 10:00</td>
-                        <td width="115"><div id="WARINNG">WARINNG</div></td>
+                        <td width="115">
+                            <div id="WARINNG">WARINNG</div>
+                        </td>
                         <td width="140">FAS8020</td>
                         <td width="100">서울</td>
                         <td width="100">svdi1</td>
@@ -74,9 +71,50 @@
                         <td width="100">Disk 장애</td>
                         <td width="100">미처리</td>
                     </tr>
-                     <tr id="alt">
+                    <tr>
                         <td width="175">2016.10.30 10:00</td>
-                        <td width="115"><div id="CRITICAL">CRITICAL</div></td>
+                        <td width="115">
+                            <div id="WARINNG">WARINNG</div>
+                        </td>
+                        <td width="140">FAS8020</td>
+                        <td width="100">서울</td>
+                        <td width="100">svdi1</td>
+                        <td width="100">Xxxxxxx</td>
+                        <td width="100">H/W</td>
+                        <td width="100">Disk 장애</td>
+                        <td width="100">미처리</td>
+                    </tr>
+                    <tr>
+                        <td width="175">2016.10.30 10:00</td>
+                        <td width="115">
+                            <div id="WARINNG">WARINNG</div>
+                        </td>
+                        <td width="140">FAS8020</td>
+                        <td width="100">서울</td>
+                        <td width="100">svdi1</td>
+                        <td width="100">Xxxxxxx</td>
+                        <td width="100">H/W</td>
+                        <td width="100">Disk 장애</td>
+                        <td width="100">미처리</td>
+                    </tr>
+                    <tr>
+                        <td width="175">2016.10.30 10:00</td>
+                        <td width="115">
+                            <div id="WARINNG">WARINNG</div>
+                        </td>
+                        <td width="140">FAS8020</td>
+                        <td width="100">서울</td>
+                        <td width="100">svdi1</td>
+                        <td width="100">Xxxxxxx</td>
+                        <td width="100">H/W</td>
+                        <td width="100">Disk 장애</td>
+                        <td width="100">미처리</td>
+                    </tr>
+                    <tr id="alt">
+                        <td width="175">2016.10.30 10:00</td>
+                        <td width="115">
+                            <div id="CRITICAL">CRITICAL</div>
+                        </td>
                         <td width="140">FAS8020</td>
                         <td width="100">서울</td>
                         <td width="100">svdi1</td>
@@ -88,7 +126,9 @@
 
                     <tr>
                         <td width="175">2016.10.30 10:00</td>
-                        <td width="115"><div id="CRITICAL">CRITICAL</div></td>
+                        <td width="115">
+                            <div id="CRITICAL">CRITICAL</div>
+                        </td>
                         <td width="140">FAS8020</td>
                         <td width="100">서울</td>
                         <td width="100">svdi1</td>
@@ -97,9 +137,11 @@
                         <td width="100">Disk 장애</td>
                         <td width="100">미처리</td>
                     </tr>
-                     <tr id="alt">
+                    <tr id="alt">
                         <td width="175">2016.10.30 10:00</td>
-                        <td width="115"><div id="CRITICAL">CRITICAL</div></td>
+                        <td width="115">
+                            <div id="CRITICAL">CRITICAL</div>
+                        </td>
                         <td width="140">FAS8020</td>
                         <td width="100">서울</td>
                         <td width="100">svdi1</td>
@@ -108,9 +150,11 @@
                         <td width="100">Disk 장애</td>
                         <td width="100">미처리</td>
                     </tr>
-                    <tr >
+                    <tr>
                         <td width="175">2016.10.30 10:00</td>
-                        <td width="115"><div id="CRITICAL">CRITICAL</div></td>
+                        <td width="115">
+                            <div id="CRITICAL">CRITICAL</div>
+                        </td>
                         <td width="140">FAS8020</td>
                         <td width="100">서울</td>
                         <td width="100">svdi1</td>
@@ -123,8 +167,19 @@
 
             </div>
             <div class="table_bottom">
-                <div class="event">이벤트 전체보기  ></div>
+                <div class="event">이벤트 전체보기 ></div>
             </div>
         </div>
     </div>
+
+    <div class="ticker">
+		<div id="ticker">
+			<ul>
+				<li><i class="fa fa-comment" aria-hidden="true"> </i>안녕하세요!!!!</li>
+				<li><i class="fa fa-spinner fa-spin" aria-hidden="true"></i>Netapp 입니다.</li>
+				<li><i class="fa fa-database" aria-hidden="true"></i>NIM에 오신것을 환영합니다.</li>
+			</ul>
+		</div>
+	</div>
+
 </div>

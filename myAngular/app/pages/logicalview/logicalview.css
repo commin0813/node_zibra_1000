@@ -11,6 +11,66 @@
     position: relative;
     float: left;
     border-right: 0.5px solid #396799;
+    
+}
+.layout .left_layer .row_box{
+    width:688px;
+    position: absolute;
+    left: 15px;
+}
+.layout .left_layer [class*=row-]{
+    height: 98px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.layout .left_layer [class*=row-] .col-top{
+    width:100px;
+    height: 98px;
+    float: left;
+}
+.layout .left_layer [class*=row-] .col-top #badge{
+    background-color: #787878;
+    color: #fafafa;
+    text-align: center;
+    width: 60px;
+    padding :3px 5px 3px 5px;
+    border-radius: 5px 5px 0 0 ;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.layout .left_layer [class*=row-] .col-top #badge-reverse{
+
+    color: #fafafa;
+    text-align: center;
+    width: 60px;
+    padding :3px 5px 3px 5px;
+    border-radius: 0 0 5px 5px ;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.col_group{
+    overflow: auto;
+    width: 588px;
+    height: 98px;
+    white-space: nowrap;
+    overflow-y: auto;
+  
+}
+
+.layout .left_layer [class*=row-] .col{
+    width:82px;
+    height: 98px;
+    display: inline-block;
+}
+.layout .left_layer [class*=row-] .col #col-image{
+    width: 80px;
+    height:76px;
+    background-color: #0ff;
+    margin-top: 1px;
+}
+.layout .left_layer [class*=row-] .col #col-text{
+    text-align: center;
+    height: 10px;
 }
 
 
@@ -21,5 +81,24 @@
     position: relative;
     left: 719px;
     background-color: #fafafa;
-    
+
+}
+.layout .right_layer .top_layer{
+    width:295px;
+    height: 254px;
+    border-radius: 5px;
+    border: 1px solid #396799;
+    position: absolute;
+    top:5px;
+    left: 7px;
+}
+
+.layout .right_layer .bottom_layer{
+    width:295px;
+    height: 126px;
+    border-radius: 5px;
+    border: 1px solid #396799;
+    position: absolute;
+    top:265px;
+    left: 7px;
 }

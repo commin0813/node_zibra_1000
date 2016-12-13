@@ -217,6 +217,7 @@ td #CRITICAL{
 .layout .layer_body .table_box .table_middle{
     width:1028px;
     height:155px;
+    overflow-y: auto;
     border:1px solid #6AB7DE;
     border-radius: 3px;
     background-color: #fafafa;
